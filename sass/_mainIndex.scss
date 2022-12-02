@@ -1,0 +1,56 @@
+.video{
+        position: $posicion;
+        object-fit: $cubrir;
+        top: $cero;
+        left: $cero;
+        width: $porcentaje;
+        height: $porcentaje;
+        filter:grayscale($porcentaje*0.7);
+        min-height: 100vh;
+        position: $posicion;
+        @include groove-black;
+        border-top: $eliminar;
+}
+.titulo{
+    background-color: map-get($map: $coloresPrincipales, $key: color_2);
+    color: white;
+    display: $flexible;
+    z-index: 2;
+    font-style: $decoracionTexto;
+    opacity: 0.9;
+    position: absolute;
+    bottom: $rem*(-12);
+    margin-bottom: $cero;
+    @include groove-black;
+}
+.row{
+    margin-right: $cero;
+    margin-left: $cero;
+    .estilo-card{
+      @include groove-black;
+        border-radius: $rem;
+        border-width: $rem*0.2;
+        background: map-get($map: $coloresPrincipales, $key: color_2);
+        margin: $rem*4;
+        margin-left: $rem;
+        margin-right: $rem*2;
+        padding-left: $cero;
+        .texto-cards{
+            text-decoration: $eliminar;
+            font-style: $rem*4;
+            color: $colorCuaternario;
+            .img-card{
+                height: $rem*24;
+                width: $rem*43.6;
+                border-radius: $rem*0.8;
+            }                
+          }
+        .texto-cards:hover{
+            color: $colorCuaternario;
+        }
+      }
+      .estilo-card:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+      }
+}

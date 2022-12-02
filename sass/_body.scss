@@ -1,0 +1,13 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.3;
+    font-size: $rem*2.6;
+    p{
+        padding: $rem;
+    }
+    
+    h1{
+        margin-left: $rem;
+        font-size: $rem*8.8;
+    }
+}

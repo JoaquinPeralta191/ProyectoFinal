@@ -1,0 +1,22 @@
+.cabecera{
+    background: map-get($map: $coloresPrincipales, $key: color_1);
+    @include groove-black;
+    border-top: $eliminar;
+    border-left: $eliminar;
+    border-right: $eliminar;
+    .fondo{
+        background: map-get($map: $coloresPrincipales, $key: color_3);
+         border-radius: $rem;
+         @include groove-black;
+        margin: $rem*0.8;
+        text-align: $aliniacion;
+    }
+    .borde-boton{
+        border: 3.5px solid $colorCuaternario;
+        background-color: $eliminar;
+        box-shadow: $eliminar;
+    }
+    .nav-item{
+        cursor: pointer;
+    }
+}
